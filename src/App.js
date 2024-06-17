@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Navigation from "./Navigation/Nav";
+import Frontpage from "./Frontpage/Front";
 import Products from "./Products/Products";
 import products from "./db/data";
 import Recommended from "./Recommended/Recommended";
@@ -71,6 +72,7 @@ function App() {
 
   return (
     <>
+      <Frontpage handleChange={handleChange} />
       <Sidebar handleChange={handleChange} />
       <Navigation query={query} handleInputChange={handleInputChange} />
       <Recommended handleClick={handleClick} />
